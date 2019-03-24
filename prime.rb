@@ -5,10 +5,5 @@ def prime?(num)
   true
 end
 
-def prime?(num)
-  num = -1
-  (2..(num - 1)).each do |prime|
-    return false if num % prime == 0
-  end
-  true
-end
+
+prime?(-1)
