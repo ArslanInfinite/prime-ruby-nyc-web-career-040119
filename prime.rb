@@ -6,6 +6,7 @@ def prime?(num)
 end
 
 def prime?(num)
+  num = -1
   (2..(num - 1)).each do |prime|
     return false if num % prime == 0
   end
