@@ -5,5 +5,11 @@ def prime?(num)
   true
 end
 
+def prime?(num)
+  (2..(num - 1)).each do |prime|
+    return true if num % prime == 0
+  end
+  false
+end
 
 prime?(-1)
